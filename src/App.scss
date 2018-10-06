@@ -1,0 +1,135 @@
+@import "~normalize.css/normalize.css";
+@import "./styles/common.scss";
+
+html {
+  font-size: 15px;
+}
+
+.hobbies {
+  &-my,
+  &-friend {
+    width: 80%;
+    margin: 15px auto;
+    padding: 5px;
+  }
+
+  &__header {
+    padding-bottom: 6px;
+    border-bottom: 2px solid $gray;
+    font-size: 1.3rem;
+    color: $darkslategray;
+  }
+
+  &__subheader {
+    display: flex;
+    padding: 20px 0px;
+    font-size: 1.1rem;
+
+    &-decorator {
+      background: $gray;
+      height: 1px;
+      width: 100%;
+      align-self: center;
+      margin-left: 10px;
+    }
+  }
+}
+
+.hobbies-list {
+  &__item {
+    display: flex;
+    position: relative;
+    padding: 5px;
+    margin-left: 5px;
+
+    &__value {
+      position: relative;
+      flex-grow: 1;
+      white-space: nowrap;
+      overflow-x: hidden;
+
+      &-decorated {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 28px;
+        height: 100%;
+        background: linear-gradient(
+          to right,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 0.9) 76%,
+          $white 100%
+        );
+      }
+    }
+
+    &__remove {
+      background-image: url(./images/close.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      left: -10px;
+      top: 0;
+      height: 27px;
+      width: 16px;
+    }
+
+    &__add {
+      background-image: url(./images/add.gif);
+      background-repeat: no-repeat;
+
+      background-position: center;
+      position: absolute;
+      left: -10px;
+      top: 0;
+      height: 28px;
+      width: 16px;
+    }
+
+    &__added {
+      background-image: url(./images/ok.png);
+      background-repeat: no-repeat;
+
+      background-position: left;
+      padding-left: 20px;
+    }
+
+    &__complain {
+      background-image: url(./images/warn.png);
+      background-repeat: no-repeat;
+
+      background-position: left;
+      align-self: flex-end;
+      padding-left: 15px;
+      margin-left: 10px;
+    }
+
+    &_selected {
+      flex-wrap: wrap;
+
+      .hobbies-list__item__value {
+        flex-grow: 0;
+        padding-right: 18px;
+      }
+    }
+  }
+
+  &__add {
+    padding: 5px;
+
+    &__input {
+      &-text {
+        width: 50%;
+        padding: 5px;
+        border: 1px solid $lightgrey;
+        font-size: 14px;
+      }
+    }
+  }
+  &__more {
+    color: $orange;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 5px;
+  }
+}

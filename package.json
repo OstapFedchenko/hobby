@@ -1,8 +1,10 @@
 {
   "name": "hobbies",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0",
+  "private": false,
   "dependencies": {
+    "node-sass": "^4.9.3",
+    "normalize.css": "^8.0.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-scripts": "2.0.4"

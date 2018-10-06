@@ -1,0 +1,26 @@
+@import "../../styles/common.scss";
+
+.modal-complain {
+  position: fixed;
+  left: 10%;
+  top: 10%;
+  right: 10%;
+  bottom: 10%;
+  z-index: 1000;
+  background-color: $gray;
+  opacity: 0.9;
+
+  &__close {
+    text-align: right;
+    color: $black;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  &__content {
+    font-size: 25px;
+    color: $black;
+    width: 80%;
+    margin: 10% auto;
+  }
+}
