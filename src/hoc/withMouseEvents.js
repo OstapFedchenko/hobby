@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import { HOBBIES_LIST_ITEM_CLASS } from "../constants";
+
 const withMouseEvents = WrappedComponent =>
   class MouseEventsHoc extends Component {
     element = null;
@@ -14,7 +16,9 @@ const withMouseEvents = WrappedComponent =>
 
       if (relatedTarget) {
         while (relatedTarget) {
-          if (relatedTarget === this.element) return;
+          if (relatedTarget === this.element) {
+            return;
+          }
 
           relatedTarget = relatedTarget.parentNode;
         }
@@ -32,7 +36,9 @@ const withMouseEvents = WrappedComponent =>
       let target = event.target;
 
       while (target !== this.element) {
-        if (target.className.includes("hobbies-list__item")) break;
+        if (target.className.includes(HOBBIES_LIST_ITEM_CLASS)) {
+          break;
+        }
 
         target = target.parentNode;
       }

@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import Declension from "../../services/declension";
+import TitlesDeclension from "../../services/titlesDeclension";
 
 const More = ({ count, onClick }) => (
   <div className="hobbies-list__more" onClick={onClick}>
-    еще {count} {Declension.convert(count)}
+    еще {count} {TitlesDeclension.convert(count)}
   </div>
 );
 

@@ -77,7 +77,6 @@ html {
     &__add {
       background-image: url(./images/add.gif);
       background-repeat: no-repeat;
-
       background-position: center;
       position: absolute;
       left: -10px;
@@ -89,7 +88,6 @@ html {
     &__added {
       background-image: url(./images/ok.png);
       background-repeat: no-repeat;
-
       background-position: left;
       padding-left: 20px;
     }
@@ -97,11 +95,11 @@ html {
     &__complain {
       background-image: url(./images/warn.png);
       background-repeat: no-repeat;
-
       background-position: left;
       align-self: flex-end;
       padding-left: 15px;
       margin-left: 10px;
+      cursor: pointer;
     }
 
     &_selected {

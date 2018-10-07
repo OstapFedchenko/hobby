@@ -2,16 +2,19 @@
 
 ## Installation
 
-### 1. Install all necessary npm packages:  
+### 1. Install all necessary npm packages:
+
 ```
 npm i
 ```
+
 ### 2. Start react application:
+
 ```
 npm start
 ```
 
-## What you can do?
+## What can you do?
 
 1. Add a new hobby in your list by the input control.
 2. Add a new hobby in your list from the list of your friend's hobbies.
@@ -23,4 +26,4 @@ The app has been built with React Create App 2.
 
 ## Authors
 
-* **Ostap Fedchenko** - (xzenus2007@rambler.ru)
+- **Ostap Fedchenko** - (xzenus2007@rambler.ru)

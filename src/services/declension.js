@@ -1,8 +1,6 @@
-const titles = ["интерес", "интереса", "интересов"];
-
 class Declension {
-  convert(n) {
-    return titles[
+  convert(n, declisitions) {
+    return declisitions[
       n % 10 === 1 && n % 100 !== 11
         ? 0
         : n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 10 || n % 100 >= 20)

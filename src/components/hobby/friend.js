@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import withMouseEvents from "../../hoc";
+import withMouseEvents from "../../hoc/withMouseEvents";
 
 const FriendHobby = ({
   name,

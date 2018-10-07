@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
+import { ENTER_KEY } from "../../constants";
+
 class Input extends Component {
   static propTypes = {
     submit: PropTypes.func
@@ -17,7 +19,10 @@ class Input extends Component {
   };
 
   onKeyPress = event => {
-    if (event.key === "Enter" && this.state.value.trim()) {
+    if (
+      (event.keyCode === ENTER_KEY || event.which === ENTER_KEY) &&
+      this.state.value.trim()
+    ) {
       this.props.submit(this.state.value);
       this.setState({
         value: ""
